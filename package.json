@@ -1,0 +1,25 @@
+{
+  "name": "dbugger",
+  "version": "1.0.0",
+  "description": "CLI tool to monitor pm2 logs and send errors to Slack",
+  "main": "dbugger.js",
+  "bin": {
+    "dbugger": "./dbugger.js"
+  },
+  "scripts": {
+    "start": "node dbugger.js",
+    "send": "node dbugger.js send",
+    "init": "node dbugger.js init"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "commander": "^7.2.0",
+    "consola": "^3.2.3",
+    "fs-extra": "^10.0.0",
+    "pm2": "^4.5.6",
+    "simple-git": "^2.32.0",
+    "chalk": "^4.1.2"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
